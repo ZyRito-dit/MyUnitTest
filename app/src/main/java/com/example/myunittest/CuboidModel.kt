@@ -7,11 +7,22 @@ class CuboidModel {
 
     fun getVolume(): Double = width * length * height
 
-    fun getSurfaceArea(): Double{
-        val wl = width * length
+
+    //Yang Benar
+//    fun getSurfaceArea(): Double{
+//        val wl = width * length
+//        val wh = width * height
+//        val lh = length * height
+//        return 2 * (wl + wh + lh)
+//    }
+
+    //Yang Salah
+    fun getSurfaceArea(): Double {
+        val lw = length * width
         val wh = width * height
         val lh = length * height
-        return 2 * (wl + wh + lh)
+        return 4 * (lw + wh + lh)
+
     }
     fun getCircumference(): Double = 4 * (width+length+height)
     fun save(width: Double, length: Double, height: Double){

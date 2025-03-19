@@ -26,7 +26,7 @@ class MainActivityTest{
     private val dummyWidth = "7.0"
     private val dummyHeight = "6.0"
     private val emptyInput = ""
-    private val fieldEmpty = "Field ini tidak boleh kosong"
+    private val fieldEmpty = "Field Ini tidak boleh kosong"
 
     @Before
     fun setup(){
@@ -102,6 +102,7 @@ class MainActivityTest{
         onView(withId(R.id.btn_save)).check(matches(isDisplayed()))
         onView(withId(R.id.btn_save)).perform(click())
     }
+  
 
 
 }
